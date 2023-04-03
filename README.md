@@ -1,5 +1,5 @@
 ## One-RV32
-**One-RV32** is a single-cycle RISC-V CPU (**RV32I**).
+**One-RV32** is a **single-cycle** RISC-V CPU (**RV32I**).
  - Only supports the basic instructions and does not support the ECALL, FENCE, and EBREAK instructions
  - Verified using a "riscv-tests" suite (from https://github.com/regymm/quasiSoC, who got it originally from https://github.com/riscv-software-src/riscv-tests). Thank you! 
 	 - Managed to catch lots of issues regarding load/store instructions with these
