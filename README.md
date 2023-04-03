@@ -8,6 +8,7 @@
  - Uses the Harvard Architecture (separate instruction and data memories)
  - Data memory is split into even and odd address banks
  - CPU and code is intended for educational purposes and is intended to be simplistic in order to be easy to understand
+ - Drawbacks: Not using BRAM right now, so memory will be synthesized inefficiently and this CPU will likely not be able to run so fast when larger programs are run!
 
 ### Additional Details
 The CPU uses a memory model that needs even-odd address memory banking. This was used in order to support unaligned memory accesses in a single clock cycle. Eventually, the plan is to make unaligned accesses require multiple cycles to simplify the memory and CPU design.
