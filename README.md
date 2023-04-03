@@ -4,7 +4,7 @@ One-RV32 is a single-cycle RISC-V CPU (RV32I).
  - Verified using a "riscv-tests" suite (from https://github.com/regymm/quasiSoC, who got it originally from https://github.com/riscv-software-src/riscv-tests). Thank you! 
 	 - Managed to catch lots of issues regarding load/store instructions with these
  - Also verified using manual testbenches for each instruction using simple tests
- - Tested on the Digilent Basys 3 FPGA development board at 100 MHz
+ - Tested on the Digilent Basys 3 FPGA development board at **100 MHz**
  - Uses the Harvard Architecture (separate instruction and data memories)
  - Data memory is split into even and odd address banks
  - CPU and code is intended for educational purposes and is intended to be simplistic in order to be easy to understand
