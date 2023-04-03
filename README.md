@@ -34,6 +34,19 @@ The "cpu_top" module contains a simple factorial program. It calculates the fact
 
 The "vivado" folder also contains an entire pre-built project that can be used directly if desired.
 
+### Testing
+
+The "riscv-tests" are in the testbench file "tb_cpu_top". The factorial test is in "tb_cpu_regular". For "tb_cpu_top", it simply runs the built tests from "riscv-tests" and monitors a memory address in the data memory (even bank). The output is in ASCII and will have to be manually observed. The test number can be seen in the Makefile for building the tests and will be outputted for every test result. "ok" would be a stream of "6f", "6b", etc...
+An example result could be (the "6f 6b d a" means it passed):
+
+665000, 00010000, 00000019
+715000, 00010000, 0000006f
+765000, 00010000, 0000006b
+815000, 00010000, 0000000d
+865000, 00010000, 0000000a
+
+If it does not pass, it would be a longer message. The full test results are in the "docs" folder in "final_test_results.txt". That file has some content filtered out (the "run 1000 us" etc... text from Vivado and also separates each test result with a new line for easier reading.) The future plans are to make it easier to view the test results in a more convenient way.
+
 ### Synthesis and Performance Images
 
 Synthesis and Implementation Results (Utilization and Timing):
