@@ -1,4 +1,4 @@
-## About
+## One-RV32
 One-RV32 is a single-cycle RISC-V CPU (RV32I).
  - Only supports the basic instructions and does not support the ECALL, FENCE, and EBREAK instructions
  - Verified using a "riscv-tests" suite (from https://github.com/regymm/quasiSoC, who got it originally from https://github.com/riscv-software-src/riscv-tests). Thank you! 
@@ -35,9 +35,11 @@ The "cpu_top" module contains a simple factorial program. It calculates the fact
 ### Synthesis and Performance Images
 
 Synthesis and Implementation Results (Utilization and Timing):
+
 ![Synthesis and Implementation Results](./docs/synthesis_and_implementation_results.png)
 
 More Utilization Results:
+
 ![Utilization](./docs/utilization.png)
 
 ### Todo:
