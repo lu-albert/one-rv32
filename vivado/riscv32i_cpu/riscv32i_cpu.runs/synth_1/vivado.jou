@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Apr  2 19:36:22 2023
+# Process ID: 24960
+# Current directory: C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1
+# Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+# Log file: C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1/cpu_top.vds
+# Journal file: C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1\vivado.jou
+# Running On: DESKTOP-TU336IJ, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 6, Host memory: 17115 MB
+#-----------------------------------------------------------
+source cpu_top.tcl -notrace

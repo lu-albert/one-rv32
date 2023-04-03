@@ -1,0 +1,488 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Apr  2 19:36:22 2023
+# Process ID: 24960
+# Current directory: C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1
+# Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+# Log file: C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1/cpu_top.vds
+# Journal file: C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1\vivado.jou
+# Running On: DESKTOP-TU336IJ, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 6, Host memory: 17115 MB
+#-----------------------------------------------------------
+source cpu_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/utils_1/imports/synth_1/mux2.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/utils_1/imports/synth_1/mux2.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top cpu_top -part xc7a35tcpg236-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22664
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'load_select_unit' with formal parameter declaration list [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/load_select_unit.v:12]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'store_select_unit' with formal parameter declaration list [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/store_select_unit.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1278.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu_top' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_top.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_REGISTERS bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/datapath.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/register.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/adder.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/mux2.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/mux2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/regfile.v:4]
+	Parameter NUM_REGISTERS bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/regfile.v:4]
+INFO: [Synth 8-6157] synthesizing module 'imm_sel_ext_32bit' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imm_sel_ext_32bit.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imm_sel_ext_32bit.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'imm_sel_ext_32bit' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imm_sel_ext_32bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/alu.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'branch_unit' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/branch_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'branch_unit' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/branch_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/mux3.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/mux3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'store_select_unit' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/store_select_unit.v:4]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'store_select_unit' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/store_select_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'load_select_unit' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/load_select_unit.v:4]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'load_select_unit' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/load_select_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/datapath.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/memory.v:23]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter IMEM_ROWS bound to: 50000 - type: integer 
+	Parameter DMEM_ROWS bound to: 50000 - type: integer 
+	Parameter IMEM_HEX_FILE bound to: factorial_code.mem - type: string 
+	Parameter DMEM_HEX_FILE_EVEN bound to: factorial_data.mem - type: string 
+	Parameter DMEM_HEX_FILE_ODD bound to: factorial_data.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imem.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MEM_ROWS bound to: 50000 - type: integer 
+	Parameter MEM_HEX_FILE bound to: factorial_code.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'factorial_code.mem' is read successfully [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imem.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/dmem.v:3]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter MEM_ROWS bound to: 50000 - type: integer 
+	Parameter MEM_HEX_FILE bound to: factorial_data.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'factorial_data.mem' is read successfully [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/dmem.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/dmem.v:3]
+WARNING: [Synth 8-7071] port 'addr2' of module 'dmem' is unconnected for instance 'dmem_unit_odd' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/memory.v:79]
+WARNING: [Synth 8-7071] port 'data2' of module 'dmem' is unconnected for instance 'dmem_unit_odd' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/memory.v:79]
+WARNING: [Synth 8-7023] instance 'dmem_unit_odd' of module 'dmem' has 7 connections declared, but only 5 given [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/memory.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/memory.v:23]
+WARNING: [Synth 8-7071] port 'dmem_addr2' of module 'memory' is unconnected for instance 'mem' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_top.v:46]
+WARNING: [Synth 8-7071] port 'dmem_data2' of module 'memory' is unconnected for instance 'mem' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_top.v:46]
+WARNING: [Synth 8-7023] instance 'mem' of module 'memory' has 12 connections declared, but only 10 given [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_top.v:46]
+INFO: [Synth 8-6157] synthesizing module 'cpu_debug' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_debug.v:4]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/seven_seg_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/seven_seg.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/seven_seg.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/seven_seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/seven_seg_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_debug' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_debug.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_top' (0#1) [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/cpu_top.v:5]
+WARNING: [Synth 8-7129] Port addr[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[2] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[2] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr2[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[31] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[30] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[29] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[28] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[27] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[26] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[25] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[24] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module imm_sel_ext_32bit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1298.047 ; gain = 20.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1298.047 ; gain = 20.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1298.047 ; gain = 20.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1298.047 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/constrs_1/new/cpu_top.xdc]
+Finished Parsing XDC File [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/constrs_1/new/cpu_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/constrs_1/new/cpu_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1353.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1353.645 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1353.645 ; gain = 75.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1353.645 ; gain = 75.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1353.645 ; gain = 75.633
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'we_mem_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'we_reg_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'instr_type_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_type_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_ctrl_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_src_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'mem2reg_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'size_type_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'jr_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'upper_imm_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/control_unit.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_ext_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/imm_sel_ext_32bit.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'out_data_p1_reg' [C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.srcs/sources_1/new/store_select_unit.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1353.645 ; gain = 75.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 16    
+	   4 Input   32 Bit        Muxes := 11    
+	  25 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 9     
+	   6 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port in_data_p1[31] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[30] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[29] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[28] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[27] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[26] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[25] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data_p1[24] in module load_select_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module imm_sel_ext_32bit is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (c/cu/upper_imm_reg[1]) is unused and will be removed from module cpu_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 1655.395 ; gain = 377.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+-----------------------------------------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives                                    | 
++------------+----------------------------+-----------+----------------------+-----------------------------------------------+
+|\c/dp       | rf/registers_reg           | Implied   | 32 x 32              | RAM32M x 18                                   | 
+|cpu_top     | mem/dmem_unit_odd/mem_reg  | Implied   | 64 K x 32            | RAM16X1S x 32 RAM64X1S x 32 RAM256X1S x 6240  | 
+|cpu_top     | mem/dmem_unit_even/mem_reg | Implied   | 64 K x 32            | RAM16X1S x 32 RAM64X1S x 32 RAM256X1S x 6240  | 
++------------+----------------------------+-----------+----------------------+-----------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1655.395 ; gain = 377.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 1943.117 ; gain = 665.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+-----------------------------------------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives                                    | 
++------------+----------------------------+-----------+----------------------+-----------------------------------------------+
+|\c/dp       | rf/registers_reg           | Implied   | 32 x 32              | RAM32M x 18                                   | 
+|cpu_top     | mem/dmem_unit_odd/mem_reg  | Implied   | 64 K x 32            | RAM16X1S x 32 RAM64X1S x 32 RAM256X1S x 6240  | 
+|cpu_top     | mem/dmem_unit_even/mem_reg | Implied   | 64 K x 32            | RAM16X1S x 32 RAM64X1S x 32 RAM256X1S x 6240  | 
++------------+----------------------------+-----------+----------------------+-----------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (c/cu/we_mem_reg) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/we_reg_reg) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/instr_type_reg[2]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/instr_type_reg[1]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/instr_type_reg[0]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/branch_type_reg[2]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/branch_type_reg[1]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/branch_type_reg[0]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/size_type_reg[2]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/size_type_reg[1]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/size_type_reg[0]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/jump_reg) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[31]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[30]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[29]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[28]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[27]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[26]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[25]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[24]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[23]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[22]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[21]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[20]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[19]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[18]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[17]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[16]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[15]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[14]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[13]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[12]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[11]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[10]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[9]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[8]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[7]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[6]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[5]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[4]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[3]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[2]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[1]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/dp/su/out_data_p1_reg[0]) is unused and will be removed from module cpu_top.
+WARNING: [Synth 8-3332] Sequential element (c/cu/alu_ctrl_reg[3]) is unused and will be removed from module cpu_top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:23 ; elapsed = 00:02:28 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    38|
+|3     |LUT1     |     1|
+|4     |LUT2     |    41|
+|5     |LUT3     |    71|
+|6     |LUT4     |    39|
+|7     |LUT5     |    62|
+|8     |LUT6     |   199|
+|9     |MUXF7    |     3|
+|10    |MUXF8    |     1|
+|11    |RAM32M   |    15|
+|12    |RAM32X1D |     6|
+|13    |FDRE     |    51|
+|14    |LD       |    24|
+|15    |IBUF     |     8|
+|16    |OBUF     |    11|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 75 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:17 ; elapsed = 00:02:31 . Memory (MB): peak = 2135.176 ; gain = 801.566
+Synthesis Optimization Complete : Time (s): cpu = 00:02:29 ; elapsed = 00:02:33 . Memory (MB): peak = 2135.176 ; gain = 857.164
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2135.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 45 instances were transformed.
+  LD => LDCE: 24 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+Synth Design complete, checksum: 75a76f99
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:02:46 . Memory (MB): peak = 2135.176 ; gain = 857.164
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Albert/Desktop/FPGA_Projects/riscv32i_cpu/riscv32i_cpu.runs/synth_1/cpu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_top_utilization_synth.rpt -pb cpu_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  2 19:39:14 2023...

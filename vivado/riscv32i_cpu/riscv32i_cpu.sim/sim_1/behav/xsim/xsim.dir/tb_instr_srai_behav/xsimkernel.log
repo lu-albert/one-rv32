@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_instr_srai_behav/xsimk.exe -simmode gui -wdb tb_instr_srai_behav.wdb -simrunnum 0 -socket 63807
+Design successfully loaded
+Design Loading Memory Usage: 9208 KB (Peak: 9208 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10028 KB (Peak: 10028 KB)
+Simulation CPU Usage: 15 ms
