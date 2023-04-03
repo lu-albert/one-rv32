@@ -4,7 +4,7 @@
  - Verified using a "riscv-tests" suite (from https://github.com/regymm/quasiSoC, who got it originally from https://github.com/riscv-software-src/riscv-tests). Thank you! 
 	 - Managed to catch lots of issues regarding load/store instructions with these
  - Also verified using manual testbenches for each instruction using simple tests
- - Tested on the Digilent Basys 3 FPGA development board at **100 MHz**
+ - Tested on the **Digilent Basys 3 FPGA development board** at **100 MHz**
  - Uses the Harvard Architecture (separate instruction and data memories)
  - Data memory is split into even and odd address banks
  - CPU and code is intended for educational purposes and is intended to be simplistic in order to be easy to understand
@@ -69,7 +69,7 @@ More Utilization Results:
 
 ### Acknowledgements
 Thanks to:
-https://github.com/regymm/quasiSoC (it is licensed under GPL-3.0) for the riscv-tests. (as well as picorv32 and https://github.com/riscv-software-src/riscv-tests)
+https://github.com/regymm/quasiSoC for the riscv-tests. (as well as PicoRV32 and https://github.com/riscv-software-src/riscv-tests)
 
 ### License
 
