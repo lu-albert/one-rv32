@@ -72,5 +72,5 @@ https://github.com/regymm/quasiSoC for the riscv-tests. (as well as picorv32 and
 
 ### License
 
-This is licensed under GPL-3.0. Use at your own risk. It is intended for educational purposes.
+This is licensed under GPL-3.0. Use this project at your own risk. It is intended for educational purposes.
  
