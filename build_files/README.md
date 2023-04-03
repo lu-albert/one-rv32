@@ -1,4 +1,4 @@
-This folder contains the build files for the riscv-tests that were obtained from: https://github.com/regymm/quasiSoC
+This folder contains the build files for the riscv-tests that were obtained from: https://github.com/regymm/quasiSoC (licensed under GPL-3.0)
 Thank you so much! It was a lot easier using this code. There are some modifications I made to the addresses and also I left out some tests that were not applicable to
 this CPU.
 
