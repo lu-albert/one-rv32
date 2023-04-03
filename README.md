@@ -32,6 +32,8 @@ To remake the project in Vivado:
 
 The "cpu_top" module contains a simple factorial program. It calculates the factorial of 12. The last 5 switches on the Basys 3 board are intended to select a register from the register file. (The register file contains a debug port that can be removed later on manually.) The 6th rightmost switch is to select the upper or lower 16 bits of a selected register. It is then displayed on the 7 segment display. The center button can be used to reset the CPU too.
 
+The "vivado" folder also contains an entire pre-built project that can be used directly if desired.
+
 ### Synthesis and Performance Images
 
 Synthesis and Implementation Results (Utilization and Timing):
@@ -55,5 +57,5 @@ https://github.com/regymm/quasiSoC for the riscv-tests. (as well as picorv32 and
 
 ### License
 
-This is licensed under GPL-3.0. It is intended for educational purposes. Use at your own risk.
+This is licensed under GPL-3.0. Use at your own risk. It is intended for educational purposes.
  
