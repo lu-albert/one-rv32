@@ -69,7 +69,7 @@ More Utilization Results:
 
 ### Acknowledgements
 Thanks to:
-https://github.com/regymm/quasiSoC for the riscv-tests. (as well as picorv32 and https://github.com/riscv-software-src/riscv-tests)
+https://github.com/regymm/quasiSoC (it is licensed under GPL-3.0) for the riscv-tests. (as well as picorv32 and https://github.com/riscv-software-src/riscv-tests)
 
 ### License
 
